@@ -16,6 +16,8 @@ export const monthlyMissions = [
   { label:"키드키즈 자료 연계하기", current:8, target:10 },
 ];
 
+export const missionBenefits = ["추가 적립 혜택", "성장 배지 획득", "추천 노출 기회"];
+
 export const achievements = [
   { label:"첫 강의 등록", detail:"첫 강의를 등록했어요.", achieved:true, icon:"▶" },
   { label:"첫 판매 달성", detail:"첫 판매를 달성했어요.", achieved:true, icon:"₽" },

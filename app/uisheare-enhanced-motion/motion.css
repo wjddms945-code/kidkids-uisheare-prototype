@@ -1,7 +1,7 @@
 .motion-mode .motion-replay{position:fixed;right:18px;top:181px;z-index:34;border:1px solid #d8e1ee;border-radius:8px;background:rgba(255,255,255,.92);padding:6px 9px;color:#7b8798;font-size:11px;box-shadow:0 5px 16px rgba(29,51,85,.07)}
 .motion-mode .level-activation .level-medal{animation:creator-arrive 1.2s cubic-bezier(.22,.78,.28,1) .3s both;transform-origin:center}
-.motion-mode .level-activation .level-button>span:last-child,.motion-mode .level-activation .level-progress{animation:level-details-on .38s ease 1.08s both}
+.motion-mode .level-activation .current-level-card>span:not(.level-medal),.motion-mode .level-activation .current-level-card>strong,.motion-mode .level-activation .current-level-card>.progress-track,.motion-mode .level-activation .current-level-card>small{animation:level-details-on .38s ease 1.08s both}
 @keyframes creator-arrive{0%{opacity:0;transform:translate(42px,-105px) scale(1.8) rotate(-540deg)}64%{opacity:1;transform:translate(14px,-28px) scale(1.16) rotate(-45deg)}100%{opacity:1;transform:translate(0,0) scale(1) rotate(0)}}
 @keyframes level-details-on{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){.motion-mode .level-activation .level-medal,.motion-mode .level-activation .level-button>span:last-child,.motion-mode .level-activation .level-progress{animation:none}.motion-mode .motion-replay{display:none}}
+@media(prefers-reduced-motion:reduce){.motion-mode .level-activation .level-medal,.motion-mode .level-activation .current-level-card>*{animation:none}.motion-mode .motion-replay{display:none}}
 @media(max-width:600px){.motion-mode .motion-replay{right:12px;top:auto;bottom:14px}}
