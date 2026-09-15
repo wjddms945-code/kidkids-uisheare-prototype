@@ -16,9 +16,12 @@ type ViewName = "main" | "course" | "instructor" | "register" | "manage" | "prof
 const nav = ["필수의무교육", "자율직무연수", "5분 클래스", "쌤크", "공지사항", "FAQ", "MY 직무연수"];
 
 const formatPrice = (price: number) => price === 0 ? "0P" : `${price.toLocaleString("ko-KR")}P`;
-const spritePosition = (index: number, columns: number, rows = 1) => ({
-  backgroundPosition: `${columns === 1 ? 0 : (index % columns) * 100 / (columns - 1)}% ${rows === 1 ? 50 : Math.floor(index / columns) * 100 / (rows - 1)}%`,
-});
+const spritePosition = (index: number, columns: number, rows = 1) => {
+  const column = columns === 1 ? 0 : (index % columns) * 100 / (columns - 1);
+  const row = Math.floor(index / columns);
+  const rowPosition = rows === 1 ? 50 : rows === 2 ? (row === 0 ? 14 : 86) : row * 100 / (rows - 1);
+  return { backgroundPosition: `${column}% ${rowPosition}%` };
+};
 
 export function UisheareApp() {
   const [view, setView] = useState<ViewName>("main");
