@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "의쉐어 | 선생님의 노하우가 함께 자라는 공간",
+  title: "쌤크 | 직무연수",
   description: "현장의 수업 아이디어와 실전 노하우를 함께 나누는 교사 콘텐츠 플랫폼",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
