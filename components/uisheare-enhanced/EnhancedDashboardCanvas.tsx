@@ -2,7 +2,7 @@
 
 import { type ReactNode, useLayoutEffect, useRef, useState } from "react";
 
-const DASHBOARD_DESIGN_WIDTH = 1890;
+const DASHBOARD_DESIGN_WIDTH = 1180;
 
 export function EnhancedDashboardCanvas({ children }:{ children:ReactNode }) {
   const stageRef = useRef<HTMLDivElement>(null);
