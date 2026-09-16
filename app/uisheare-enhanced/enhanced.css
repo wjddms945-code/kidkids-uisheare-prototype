@@ -51,14 +51,13 @@
 .preview-mode .growth-record h3{font-size:16px;margin:0}
 .preview-mode .growth-more{display:inline-flex;align-items:center;gap:2px;color:#778397;font-size:12px;white-space:nowrap}
 .preview-mode .growth-record .achievement-list{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
-.preview-mode .growth-record .achievement{height:68px;min-height:68px;display:flex;align-items:center;gap:7px;padding:8px 9px;border-radius:999px;text-align:left;background:#f8fbff}
-.preview-mode .growth-record .achievement-icon{flex:0 0 32px;width:32px;height:32px;margin:0;font-size:12px}
-.preview-mode .achievement-copy{display:flex;flex-direction:column;min-width:0}
-.preview-mode .achievement-copy b{font-size:10px;line-height:1.3;white-space:normal;word-break:keep-all}
-.preview-mode .achievement-copy small{font-size:9px;color:#28a081;margin-top:2px;white-space:normal;word-break:keep-all}
-.preview-mode .growth-record .achievement.locked{filter:none;opacity:1;background:#f7f8fa;border-color:#e4e8ee;color:#778397}
-.preview-mode .growth-record .achievement.locked .achievement-icon{background:#e8ecf2;color:#9aa5b4}
-.preview-mode .growth-record .achievement.locked .achievement-copy small{color:#8b96a7}
+.preview-mode .growth-record .achievement{position:relative;height:68px;min-height:68px;display:flex;align-items:center;justify-content:center;padding:9px 8px;border:1px solid #dfe7f1;border-radius:13px;text-align:center;background:#f8fbff;overflow:hidden}
+.preview-mode .growth-record .achievement>b{max-width:78px;font-size:11px;line-height:1.35;color:#32435e;white-space:normal;word-break:keep-all}
+.preview-mode .growth-record .achievement.achieved{background:#f3f5f8;border-color:#e1e6ed}
+.preview-mode .growth-record .achievement.achieved>b{opacity:.4;filter:grayscale(1)}
+.preview-mode .completion-stamp{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-9deg);display:grid;place-items:center;width:52px;height:28px;border:2px solid rgba(89,104,125,.5);border-radius:7px;color:rgba(70,84,105,.62);background:rgba(255,255,255,.38);font-size:14px;font-weight:900;letter-spacing:.12em;text-indent:.12em;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.preview-mode .growth-record .achievement.locked{background:#fafbfc;border-color:#e7ebf0}
+.preview-mode .growth-record .achievement.locked>b{color:#7f8a9a}
 
 .preview-mode .mission-card{display:flex;flex-direction:column}
 .preview-mode .mission-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
