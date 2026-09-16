@@ -19,11 +19,11 @@ export const monthlyMissions = [
 export const missionBenefits = ["추가 적립 혜택", "성장 배지 획득", "추천 노출 기회"];
 
 export const achievements = [
-  { label:"첫 강의 등록", detail:"첫 강의를 등록했어요.", achieved:true, icon:"▶" },
-  { label:"첫 판매 달성", detail:"첫 판매를 달성했어요.", achieved:true, icon:"₽" },
-  { label:"수강자 100명", detail:"수강자 100명을 달성했어요.", achieved:true, icon:"人" },
-  { label:"리뷰 10개", detail:"리뷰 10개를 받았어요.", achieved:true, icon:"★" },
-  { label:"인기 강의 선정", detail:"인기 강의 선정까지 조금만 더 남았어요.", achieved:false, icon:"▣" },
+  { label:"첫 강의 등록", detail:"첫 강의를 등록했어요.", status:"달성했어요!", achieved:true, icon:"▶" },
+  { label:"첫 판매 달성", detail:"첫 판매를 달성했어요.", status:"달성했어요!", achieved:true, icon:"₽" },
+  { label:"수강자 100명", detail:"수강자 100명을 달성했어요.", status:"달성했어요!", achieved:true, icon:"人" },
+  { label:"리뷰 10개", detail:"리뷰 10개를 받았어요.", status:"조금만 더!", achieved:true, icon:"★" },
+  { label:"인기 강의 선정", detail:"인기 강의 선정까지 조금만 더 남았어요.", status:"도전해보세요!", achieved:false, icon:"▣" },
 ];
 
 export const dashboardTrends: Record<string,string> = {
