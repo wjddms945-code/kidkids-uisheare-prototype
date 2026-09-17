@@ -1,7 +1,7 @@
-.preview-mode .my-section{width:100%;margin:30px 0 0;transform:none}
+.preview-mode .my-section{width:100%;margin:60px 0 0;transform:none}
 .preview-mode .dashboard-stage{position:relative;width:100%;overflow:visible}
 .preview-mode .dashboard-canvas{position:absolute;left:0;top:0;width:1180px;transform-origin:top left;will-change:transform}
-.preview-mode .my-section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding:0 2px}
+.preview-mode .my-section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;padding:0 2px}
 .preview-mode .my-section-head h2{display:flex;align-items:center;gap:8px;margin:0;font-size:23px;letter-spacing:-.5px}
 .preview-mode .my-section-head>span{font-size:12px;color:#8190a7}
 .preview-mode .dashboard-canvas .preview-dashboard-grid{grid-template-columns:1.05fr 2.25fr 1.1fr;gap:14px;align-items:stretch}
@@ -9,26 +9,25 @@
 
 .preview-mode .profile-card{display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(245,249,255,.94) 0,rgba(255,255,255,.98) 43%,#fff 100%)}
 .preview-mode .profile-card:before{content:"";position:absolute;width:102px;height:102px;border-radius:50%;left:50%;top:18px;transform:translateX(-50%);background:rgba(255,255,255,.58);box-shadow:0 0 0 22px rgba(222,233,251,.2);pointer-events:none}
-.preview-mode .profile-decoration{position:absolute;inset:0;z-index:0;pointer-events:none}
-.preview-mode .profile-decoration>span:first-child{position:absolute;left:14px;top:56px;color:#91a1bd;font-size:10px;line-height:1.7;letter-spacing:.01em;transform:rotate(-6deg);text-align:left}
-.preview-mode .profile-decoration>.level-medal{position:absolute;right:-22px;top:12px;width:122px;height:122px;opacity:.11;filter:grayscale(.2)}
-.preview-mode .profile-decoration>.level-medal img{object-fit:contain}
 .preview-mode .profile-avatar{width:100px;height:100px;margin-bottom:7px;position:relative;z-index:1;box-shadow:0 9px 24px rgba(52,75,111,.12)}
 .preview-mode .profile-card>strong{font-size:18px;line-height:1.45;position:relative;z-index:1;white-space:nowrap}
 .preview-mode .profile-card>strong small{font-size:11px;padding:3px 7px}
 .preview-mode .profile-card>p{font-size:12px;line-height:1.55;margin:3px 0 12px;position:relative;z-index:1;word-break:keep-all}
 .preview-mode .level-activation{width:100%;position:relative;z-index:1}
-.preview-mode .current-level-card{position:relative;display:grid!important;grid-template-columns:72px minmax(0,1fr) 12px;align-items:center;column-gap:7px;width:100%;height:134px!important;min-height:134px;overflow:hidden;border:1px solid #dfd2fb!important;border-radius:14px!important;background:linear-gradient(145deg,#fcfaff,#f3edff)!important;padding:10px 8px!important;margin:0!important;text-align:left;color:#3f2c68;box-shadow:0 7px 18px rgba(105,75,167,.06)}
-.preview-mode .current-level-card:hover{border-color:#bca6ed!important;background:linear-gradient(145deg,#fff,#f0e9ff)!important}
-.preview-mode .current-level-card .level-medal{position:relative;left:auto;top:auto;width:72px;height:72px;align-self:center;filter:drop-shadow(0 6px 7px rgba(66,47,103,.16))}
+.preview-mode .current-level-card{position:relative;display:grid!important;grid-template-columns:72px minmax(0,1fr) 16px;align-items:center;column-gap:16px;width:100%;height:134px!important;min-height:134px;overflow:hidden;border:1px solid var(--line)!important;border-radius:14px!important;background:#fff!important;padding:16px 18px!important;margin:0!important;text-align:left;color:var(--navy);box-shadow:none}
+.preview-mode .current-level-card:hover{border-color:#c9b8f2!important;background:#fff!important}
+.preview-mode .current-level-card .level-medal{position:relative;left:auto;top:auto;width:72px;height:72px;align-self:center;filter:none}
 .preview-mode .current-level-card .level-medal img{object-fit:contain}
 .preview-mode .level-card-copy{display:block;min-width:0;word-break:keep-all;overflow-wrap:normal}
-.preview-mode .current-level-card .level-kicker{display:block;font-size:10px;color:#806ba8;font-weight:800;letter-spacing:.02em}
-.preview-mode .current-level-card .level-card-copy>strong{display:block;font-size:19px;line-height:1.15;margin:2px 0 5px;color:#4c1fa4;white-space:nowrap}
-.preview-mode .current-level-card .level-next{display:block;font-size:10px;line-height:1.35;color:#5e5273;white-space:nowrap}
-.preview-mode .current-level-card .progress-track{display:block;width:100%;height:7px;margin:7px 0}
-.preview-mode .current-level-card small{display:block;font-size:10px;line-height:1.4;color:#766b87;word-break:keep-all;white-space:normal}
-.preview-mode .current-level-card .level-arrow{width:14px;height:14px;color:#815ce0;align-self:center}
+.preview-mode .current-level-card .level-kicker{display:block;font-size:11px;color:#8a94a6;font-weight:700;letter-spacing:.02em}
+.preview-mode .current-level-card .level-card-copy>strong{display:block;font-size:25px;font-weight:800;line-height:1.2;margin:4px 0 12px;color:var(--navy);white-space:nowrap}
+.preview-mode .current-level-card .level-progress-row{display:flex;align-items:center;gap:10px;margin:0 0 10px}
+.preview-mode .current-level-card .level-progress-row .progress-track{flex:1;width:auto;margin:0}
+.preview-mode .current-level-card .level-percent{flex:0 0 auto;font-size:13px;font-weight:700;color:#7c3aed}
+.preview-mode .current-level-card .level-next{display:block;font-size:12px;line-height:1.35;color:#8a94a6;white-space:nowrap}
+.preview-mode .current-level-card .level-next b{color:#7c3aed;font-weight:700}
+.preview-mode .current-level-card .progress-track{display:block;width:100%;height:7px;margin:0}
+.preview-mode .current-level-card .level-arrow{width:16px;height:16px;color:#8a94a6;align-self:center}
 .preview-mode .profile-actions{width:100%;margin-top:auto;padding-top:7px;position:relative;z-index:1}
 .preview-mode .profile-actions button{height:36px;margin-top:6px;border-radius:8px;font-size:12px;font-weight:700}
 .preview-mode .profile-actions .profile-primary{border-color:#2877ee;background:#2877ee;color:#fff}

@@ -11,8 +11,8 @@ export const courses: Course[] = [
   { id:"c4", tag:"무료", title:"AI로 가정통신문 5분 만에 완성!", instructor:"이소인 선생님", instructorId:"i3", price:0, rating:4.7, reviews:74, duration:8, sprite:3, age:"공통", topic:"AI 업무활용", situation:"업무", material:false, description:"교사를 위한 생성형 AI 프롬프트와 안전한 문서 작성 실습" },
   { id:"c5", tag:"추천", title:"집중력을 높이는 놀이 활동 3가지", instructor:"최유진 선생님", instructorId:"i5", price:10000, rating:4.8, reviews:61, duration:8, sprite:4, age:"유아", topic:"놀이수업", situation:"수업", material:true, description:"준비물은 줄이고 참여도는 높이는 짧은 전환 놀이" },
   { id:"c6", tag:"무료", title:"등원 시간을 살리는 아침 루틴", instructor:"이현정 선생님", instructorId:"i6", price:0, rating:4.7, reviews:49, duration:6, sprite:5, age:"유아", topic:"새학기 적응", situation:"교실운영", material:false, description:"등원부터 자유놀이까지 매끄럽게 잇는 6분 핵심 루틴" },
-  { id:"c7", tag:"신규", title:"5분 감정 체크로 교실 마음 열기", instructor:"김도연 선생님", instructorId:"i1", price:12000, rating:4.9, reviews:42, duration:7, sprite:6, age:"초등", topic:"문제행동", situation:"생활지도", material:true, description:"감정카드를 활용해 하루를 안정적으로 시작하는 방법" },
-  { id:"c8", tag:"인기", title:"수업 마무리 정리 노하우", instructor:"박수진 선생님", instructorId:"i5", price:15000, rating:4.8, reviews:95, duration:9, sprite:7, age:"초등", topic:"수업설계", situation:"수업", material:true, description:"배운 것을 오래 기억하게 하는 회고와 정리 질문" },
+  { id:"c7", tag:"신규", title:"5분 감정 체크로 교실 마음 열기", instructor:"김도연 선생님", instructorId:"i1", price:12000, rating:4.9, reviews:42, duration:7, sprite:6, age:"예비초등", topic:"문제행동", situation:"생활지도", material:true, description:"감정카드를 활용해 하루를 안정적으로 시작하는 방법" },
+  { id:"c8", tag:"인기", title:"수업 마무리 정리 노하우", instructor:"박수진 선생님", instructorId:"i5", price:15000, rating:4.8, reviews:95, duration:9, sprite:7, age:"예비초등", topic:"수업설계", situation:"수업", material:true, description:"배운 것을 오래 기억하게 하는 회고와 정리 질문" },
 ];
 
 export const shortCourses = courses.filter((course) => course.duration <= 10);
@@ -41,7 +41,7 @@ export const dashboardStats = [
 export const courseStatuses = [["승인 대기",1],["판매중",8],["수정 요청",0],["반려",1],["판매중지",0]] as const;
 
 export const filters = {
-  age:["전체 연령","유아","초등","공통"], topic:["전체 주제","새학기 적응","문제행동","학부모 상담","AI 업무활용","놀이수업","수업설계"],
+  age:["전체 연령","영아","유아","예비초등","방과후돌봄","공통"], topic:["전체 주제","새학기 적응","문제행동","학부모 상담","AI 업무활용","놀이수업","수업설계"],
   situation:["전체 상황","교실운영","상담","생활지도","수업","업무"], length:["전체 길이","10분 이하","11~20분","20분 초과"],
 };
 
