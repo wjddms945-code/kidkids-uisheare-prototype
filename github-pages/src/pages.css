@@ -1,0 +1,11 @@
+.profile-avatar,
+.instructor-avatar,
+.mini-avatar,
+.vibe-avatar {
+  background-image: url("/kidkids-uisheare-prototype/instructor-sprite.png");
+}
+
+.course-thumb,
+.kidkids-resource-thumb {
+  background-image: url("/kidkids-uisheare-prototype/course-sprite.png");
+}
